@@ -1,10 +1,9 @@
 body {
     background-color: #0b111e; 
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
 
 header {
     background-color: #e23636;
@@ -14,6 +13,7 @@ header {
 header h1 {
     font-size: 3rem;
     margin: 0;
+    color: #ffffff;
 }
 header h2 {
     font-size: 1.5rem;
@@ -21,7 +21,6 @@ header h2 {
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255); 
 }
-
 
 main {
     display: flex;
@@ -31,11 +30,14 @@ main {
     margin: 0 auto;
 }
 
-
 article {
     background-color: #172033;
     padding: 30px;
     width: 65%;
+    border-radius: 8px;
+}
+article h2 {
+    color: #e23636;
 }
 article p {
     color: #ccc;
@@ -45,8 +47,18 @@ article ul {
     color: #ccc;
     line-height: 1.8;
 }
-article b {
-    color: #fbbf24; 
+
+
+mark {
+    background-color: transparent;
+    color: #fbbf24;
+    font-weight: bold;
+}
+
+
+time {
+    color: #fbbf24;
+    font-weight: bold;
 }
 
 aside {
@@ -61,24 +73,36 @@ aside {
     background-color: #fce83a;
     color: black;
     padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 8px;
 }
 
 button {
     background-color: #e23636;
-    color: black;
+    color: #ffffff;
     font-weight: bold;
     padding: 15px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     width: 100%;
 }
 
-dialog {
-    background-color: #172033;
-    color: white;
-    border: 2px solid #e23636;
-    padding: 20px;
-    text-align: center;
+button:hover {
+    background-color: #b82525;
 }
 
 footer {
@@ -86,9 +110,19 @@ footer {
     color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
     font-weight: bold;
 }
+
+
+address {
+    font-style: normal;
+}
+address p {
+    margin: 5px 0;
+}
+
 footer blockquote {
     text-align: right;
     margin: 0;
